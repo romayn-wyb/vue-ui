@@ -1,0 +1,101 @@
+.forest-message{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+    position: fixed;
+    top: 16px;
+    left: 0;
+    z-index: 1010;
+    width: 100%;
+    pointer-events: none;
+}
+.forest-message-notice {
+    padding: 8px;
+    text-align: center;
+  }
+  .forest-message-notice:first-child{
+      margin-top: -8px;
+  }
+  .forest-message-notice-content{
+    display: inline-block;
+    padding: 10px 16px;
+    background: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    pointer-events: all;
+  }
+  .forest-message-success .anticon {
+    color: #00a854;
+  }
+  
+  .forest-message-error .anticon {
+    color: #f04134;
+  }
+  
+  .forest-message-warning .anticon {
+    color: #ffbf00;
+  }
+  
+  .forest-message-info .anticon, .forest-message-loading .anticon {
+    color: #108ee9;
+  }
+  
+  .forest-message .anticon {
+    margin-right: 8px;
+    font-size: 14px;
+    top: 1px;
+    position: relative;
+  }
+  
+  .forest-message-notice.move-up-leave.move-up-leave-active {
+    animation: MessageMoveOut .4s both;
+    -webkit-animation:  MessageMoveOut .4s both;
+    overflow: hidden;
+  }
+  
+@keyframes MessageMoveOut{
+   0%{
+     max-height: 150px;
+      opacity: 1;
+   }
+   100%{
+     max-height: 0;
+     opacity: 0;
+     padding: 0;
+   }
+}
+
+  /* @-webkit-keyframes MessageMoveOut {
+    0% {
+      opacity: 1;
+      max-height: 150px;
+      padding: 8px;
+    }
+    100% {
+      opacity: 0;
+      max-height: 0;
+      padding: 0;
+    }
+  }
+  
+  @keyframes MessageMoveOut {
+    0% {
+      opacity: 1;
+      max-height: 150px;
+      padding: 8px;
+    }
+    100% {
+      opacity: 0;
+      max-height: 0;
+      padding: 0;
+    }
+  } */

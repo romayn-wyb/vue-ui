@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calendar</title>
+    <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./calendar.css"  rel="stylesheet"/>
+    <script src="./calendar.js"></script>
+
+</head>
+
+<body>
+    <div id="calendar" class="num1  num2"></div>
+</body>
+
+</html>
+<script>
+    var data = [
+        { startDate: "2018-6-10", name: "事件1" },
+        { startDate: "2018-7-10", name: "事件2" },
+        { startDate: "2018-8-10", name: "事件3" },
+        { startDate: "2018-9-10", name: "事件4" },
+        { startDate: "2018-10-10", name: "事件5" },
+        { startDate: "2018-11-1", name: "事件6" },
+        { startDate: "2018-11-1", name: "事件7" },
+        { startDate: "2018-12-1", name: "事件8" },
+        { startDate: "2018-12-1", name: "事件9" },
+        { startDate: "2018-12-1", name: "事10" },
+        { startDate: "2019-1-10", name: "事件11" },
+        { startDate: "2019-2-10", name: "事件12" },
+        { startDate: "2019-3-10", name: "事件13" },
+        { startDate: "2019-4-10", name: "事件14" },
+        { startDate: "2019-5-10", name: "事件15" },
+        { startDate: "2019-6-10", name: "事件16" },
+        { startDate: "2019-7-10", name: "事件17" },
+        { startDate: "2019-8-10", name: "事件18" },
+        { startDate: "2019-9-10", name: "事件19" },
+        { startDate: "2019-10-10", name: "事件20" },
+        { startDate: "2019-11-10", name: "事件21" },
+        { startDate: "2019-12-10", name: "事件22" },
+        { startDate: "2020-1-10", name: "事件23" },
+        { startDate: "2020-2-10", name: "事件24" },
+    ]
+
+    new Calendar(
+        document.getElementById("calendar"),
+        {
+            data: data,
+            mode: "month"
+        }
+
+    )
+
+</script>
