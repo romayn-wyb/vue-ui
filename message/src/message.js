@@ -3,7 +3,7 @@ const message = {
         top: "24px",
         duration:2,
         getContainer: "",
-        content: "message"
+        content: "message",
     },
     destroy(elem){
         setTimeout(function () {
@@ -49,7 +49,7 @@ const message = {
     },
     init(options){
         Object.assign(this.config, options);
-        let elem= this._createMessage("success");
+        let elem= this._createMessage(this.config.type);
         if (this.config.duration > 0) {
             this.destroy(elem);
         }
@@ -64,6 +64,7 @@ const message = {
             wrapper.className = "forest-message";
             document.body.appendChild(wrapper);
         }
+        wrapper.setAttribute("message-id",new Date().getTime());
 
         wrapperBox = document.createElement("div");
         wrapperBox.className = "forest-message-notice";

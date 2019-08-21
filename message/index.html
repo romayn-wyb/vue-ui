@@ -29,7 +29,13 @@
     document.getElementById("message").addEventListener("click", function () {
         message.success({
             content: "This is a success message",
-            duration: 1
+            duration: 0,
+            beforeDestroy(){
+                console.log("开始完成")
+            },
+            afterDestroy(){
+                console.log("消失完成")
+            }
         })
     })
 

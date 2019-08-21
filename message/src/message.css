@@ -62,19 +62,7 @@
     overflow: hidden;
   }
   
-@keyframes MessageMoveOut{
-   0%{
-     max-height: 150px;
-      opacity: 1;
-   }
-   100%{
-     max-height: 0;
-     opacity: 0;
-     padding: 0;
-   }
-}
-
-  /* @-webkit-keyframes MessageMoveOut {
+  @-webkit-keyframes MessageMoveOut {
     0% {
       opacity: 1;
       max-height: 150px;
@@ -98,4 +86,4 @@
       max-height: 0;
       padding: 0;
     }
-  } */
+  }
